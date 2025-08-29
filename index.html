@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affet Beni ❤️</title>
+  <meta name="description" content="Sana özel küçük bir siteyle özür dilerim.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="hearts"></canvas>
+  <main>
+    <section class="hero">
+      <h1 id="title">Affet Beni, <span id="herName">Sevgilim</span> ❤️</h1>
+      <p id="tagline">Seni kırdığım için çok üzgünüm. Telafi etmek için küçük bir sürpriz hazırladım.</p>
+      <div class="cta-wrap">
+        <a id="cta-whatsapp" class="btn primary" target="_blank" rel="noopener">Bana bir şans daha ver 💬</a>
+        <a href="#promise" class="btn ghost">Sözlerim</a>
+        <button id="openSettings" class="btn link">Ayarla</button>
+      </div>
+    </section>
+
+    <section id="promise" class="card">
+      <h2>Kalpten Sözlerim</h2>
+      <ul class="promises">
+        <li>Seni dinlemeyi ve hislerini önemsemeyi <b>öncelik</b> yapacağım.</li>
+        <li>Şüphe yerine <b>güveni</b> büyüteceğim.</li>
+        <li>Yanlışımda <b>inat etmeden</b> özür dileyeceğim.</li>
+        <li>Sana <b>saygıyla</b> yaklaşacağım ve <b>sınırlarına</b> dikkat edeceğim.</li>
+        <li>Beraberce daha <b>güçlü</b> olacağız.</li>
+      </ul>
+      <p id="customMessage" class="note">Buraya sana özel mesajım gelecek…</p>
+    </section>
+
+    <section class="card">
+      <h2>Bizim Şarkılarımız</h2>
+      <p>Bu listeyi seni düşünerek topladım. Açar mısın? 🎧</p>
+      <div class="player">
+        <!-- Spotify embed linkini script.js'den ya da ayarlardan güncelle -->
+        <iframe id="spotifyEmbed" style="border-radius:12px" src="" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Birlikte Anılar</h2>
+      <div class="gallery">
+        <img src="https://picsum.photos/seed/love1/600/400" alt="Anı 1">
+        <img src="https://picsum.photos/seed/love2/600/400" alt="Anı 2">
+        <img src="https://picsum.photos/seed/love3/600/400" alt="Anı 3">
+      </div>
+      <p class="hint">Kendi fotoğraflarınızı <code>images/</code> klasörüne ekleyip dosya yollarını değiştirebilirsiniz.</p>
+    </section>
+
+    <section class="card">
+      <h2>Küçük Bir Rica</h2>
+      <p>Hazır olduğunda aşağıdan bana bir mesaj gönder; konuşalım, dinleyeyim, birlikte toparlayalım.</p>
+      <a id="cta-secondary" class="btn secondary" target="_blank" rel="noopener">Mesaj Gönder 💌</a>
+      <p class="mini">E‑posta kullanmak istersen: <a id="mailtoLink">tıkla</a></p>
+    </section>
+
+    <footer>
+      <p>❤️ <span id="yourName">Onur</span> — <span id="today"></span></p>
+    </footer>
+  </main>
+
+  <!-- Ayarlar Modal -->
+  <dialog id="settingsDialog">
+    <form method="dialog" id="settingsForm" class="settings">
+      <h3>Siteyi Kişiselleştir</h3>
+      <label>Onun Adı <input type="text" id="inpHerName" placeholder="Örn: Zeynep"></label>
+      <label>Senin Adın <input type="text" id="inpYourName" placeholder="Örn: Onur"></label>
+      <label>WhatsApp Numarası (ülke kodu ile) <input type="text" id="inpWhats" placeholder="905xxxxxxxxx"></label>
+      <label>Spotify Playlist URL <input type="text" id="inpSpotify" placeholder="https://open.spotify.com/playlist/..."></label>
+      <label>Özel Mesajın <textarea id="inpMsg" rows="5" placeholder="Buraya kendi cümlelerinle yaz..."></textarea></label>
+      <div class="row">
+        <button class="btn ghost" value="cancel">Vazgeç</button>
+        <button class="btn primary" id="saveBtn" value="default">Kaydet</button>
+        <button class="btn link" id="resetBtn">Sıfırla</button>
+      </div>
+      <p class="mini">Veriler sadece bu cihazın tarayıcısında saklanır (localStorage).</p>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ <meta name="description" content="Sana özel küçük bir siteyle özür dilerim.">
